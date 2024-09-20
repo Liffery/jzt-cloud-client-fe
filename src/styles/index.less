@@ -1,0 +1,81 @@
+.global-ellipsis-oneline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.global-form-item-label::after {
+  content: ":";
+  position: relative;
+  top: -0.5px;
+  margin: 0 8px 0 2px;
+}
+
+// .ant-tooltip-inner {
+//   color: #000;
+//   background-color: #fff;
+// }
+// .ant-tooltip-arrow-content {
+//   background-color: #fff;
+// }
+
+.required-icon::before {
+  display: inline-block;
+  margin-right: 2px;
+  font-size: 12px;
+  font-family: SimSun, sans-serif;
+  color: #ff4d4f;
+  content: "*";
+}
+
+// 错误提示抖动效果
+.shake {
+  @keyframes shake {
+    10%,
+    90% {
+      -webkit-transform: translate3d(-1px, 0, 0);
+      -ms-transform: translate3d(-1px, 0, 0);
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      -webkit-transform: translate3d(+2px, 0, 0);
+      -ms-transform: translate3d(+2px, 0, 0);
+      transform: translate3d(+2px, 0, 0);
+    }
+    30%,
+    70% {
+      -webkit-transform: translate3d(-2px, 0, 0);
+      -ms-transform: translate3d(-2px, 0, 0);
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%,
+    60% {
+      -webkit-transform: translate3d(+2px, 0, 0);
+      -ms-transform: translate3d(+2px, 0, 0);
+      transform: translate3d(+2px, 0, 0);
+    }
+    50% {
+      -webkit-transform: translate3d(-2px, 0, 0);
+      -ms-transform: translate3d(-2px, 0, 0);
+      transform: translate3d(-2px, 0, 0);
+    }
+  }
+
+  animation: shake 800ms ease-in-out;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-table {
+  user-select: text;
+}
+.ant-input-affix-wrapper {
+  height: 32px;
+}
+// .flex1 {
+//   flex: 1;
+// }
